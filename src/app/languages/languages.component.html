@@ -1,0 +1,5 @@
+<p>Select a Language: </p>
+<select (change)="getInfo($event.target.value)">
+    <option>Choose Language</option>
+    <option *ngFor="let language of languages" value="{{language}}">{{language}}</option>
+</select>
